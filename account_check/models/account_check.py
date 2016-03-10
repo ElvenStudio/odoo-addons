@@ -66,7 +66,7 @@ class account_check(models.Model):
         )
     number = fields.Integer(
         _('Number'),
-        required=True,
+        #required=True,
         readonly=True,
         states={'draft': [('readonly', False)]},
         copy=False
@@ -293,9 +293,11 @@ class account_check(models.Model):
         (_check_number_issue,
             'Check Number must be unique per Checkbook!',
             ['number', 'checkbook_id', 'type']),
+        """
         (_check_number_third,
             'Check Number must be unique per Owner and Bank!',
             ['number', 'bank_id', 'owner_name', 'type']),
+        """
     ]
 
     @api.one

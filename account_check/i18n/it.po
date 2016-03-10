@@ -1,78 +1,77 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * account_check
-# 
-# Translators:
+#	* account_check
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: odoo-addons (8.0)\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-02 18:20+0000\n"
-"PO-Revision-Date: 2015-10-22 21:00+0000\n"
-"Last-Translator: Juan Jose Scarafia <scarafia.juanjose@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/adhoc/ingadhoc-odoo-addons-8-0/language/it/)\n"
+"POT-Creation-Date: 2016-03-10 19:06+0000\n"
+"PO-Revision-Date: 2016-03-10 19:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: account_check
 #: selection:account.check,clearing:0
 msgid "24 hs"
-msgstr ""
+msgstr "24 ore"
 
 #. module: account_check
 #: selection:account.check,clearing:0
 msgid "48 hs"
-msgstr ""
+msgstr "48 ore"
 
 #. module: account_check
 #: selection:account.check,clearing:0
 msgid "72 hs"
-msgstr ""
+msgstr "72 ore"
 
 #. module: account_check
 #: field:account.check.action,account_id:0
 msgid "Account"
-msgstr ""
+msgstr "Conto"
 
 #. module: account_check
 #: model:ir.model,name:account_check.model_account_check
 msgid "Account Check"
-msgstr ""
+msgstr "Conto Assegno"
 
 #. module: account_check
 #: model:ir.model,name:account_check.model_account_checkbook
 msgid "Account Checkbook"
-msgstr ""
+msgstr "Conto Libro-Assegno"
 
 #. module: account_check
 #: model:ir.model,name:account_check.model_account_voucher
 msgid "Accounting Voucher"
-msgstr ""
+msgstr "Voucher contabile"
 
 #. module: account_check
 #: field:account.check.action,action_type:0
 msgid "Action type passed on the context"
-msgstr ""
+msgstr "Tipo di azione passata sul contesto "
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:19
 #: code:addons/account_check/wizard/check_reject.py:19
 #, python-format
 msgid "All checks must be from the same company!"
-msgstr ""
+msgstr "Tutti gli assegni devono essere dalla stessa società!"
 
 #. module: account_check
 #: field:account.check,amount:0
 msgid "Amount"
-msgstr ""
+msgstr "Importo"
 
 #. module: account_check
-#: field:account.change.check,bank_id:0 field:account.check,bank_id:0
+#: field:account.change.check,bank_id:0
+#: field:account.check,bank_id:0
 msgid "Bank"
-msgstr ""
+msgstr "Banca"
 
 #. module: account_check
 #: view:account.change.check:account_check.account_change_check_form_view
@@ -83,91 +82,97 @@ msgstr "Annulla"
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Cancel Debit"
-msgstr ""
+msgstr "Annulla Addebito"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Cancel Deposit"
-msgstr ""
+msgstr "Annulla Deposito"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Cancel Rejection"
-msgstr ""
+msgstr "Annulla Rifiuto"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Cancel Return"
-msgstr ""
+msgstr "Annulla Ritorno"
+
+#. module: account_check
+#: view:account.check:account_check.view_checks_search
+msgid "Cancelled"
+msgstr "Annullato"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Change"
-msgstr ""
+msgstr "Cambia"
 
 #. module: account_check
 #: view:account.change.check:account_check.account_change_check_form_view
 #: model:ir.actions.act_window,name:account_check.action_account_change_check
 msgid "Change Check"
-msgstr ""
+msgstr "Cambia Assegno"
 
 #. module: account_check
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Changed"
-msgstr ""
+msgstr "Cambiato"
 
 #. module: account_check
 #: model:ir.actions.act_window,name:account_check.action_check_debit
 msgid "Check Debit"
-msgstr ""
+msgstr "Addebito Assegno"
 
 #. module: account_check
 #: model:ir.actions.act_window,name:account_check.action_check_deposit
 msgid "Check Deposit"
-msgstr ""
+msgstr "Deposito Assegno"
 
 #. module: account_check
 #: constraint:account.check:0
 msgid "Check Number must be unique per Checkbook!"
-msgstr ""
+msgstr "Il numero dell'assegno deve essere unico per il Libro-Assegno!"
 
 #. module: account_check
 #: constraint:account.check:0
 msgid "Check Number must be unique per Owner and Bank!"
-msgstr ""
+msgstr "Il numero dell'assegno deve essere unico per il proprietario e la banca!"
 
 #. module: account_check
 #: model:ir.actions.act_window,name:account_check.action_check_rejected
 msgid "Check Rejected"
-msgstr ""
+msgstr "Assegno Rifiutato"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_reject.py:125
 #: code:addons/account_check/wizard/check_reject.py:170
 #, python-format
 msgid "Check Rejected N: "
-msgstr ""
+msgstr "Assegno Rifiutato N: "
 
 #. module: account_check
 #: model:ir.actions.act_window,name:account_check.action_check_return
 msgid "Check Return"
-msgstr ""
+msgstr "Assegno di Ritorno"
 
 #. module: account_check
 #: field:account.check.dreject,state:0
 msgid "Check State"
-msgstr ""
+msgstr "Stato Assegno"
 
 #. module: account_check
 #: field:account.check.dreject,type:0
 msgid "Check Type"
-msgstr ""
+msgstr "Tipo Assegno"
 
 #. module: account_check
 #: field:account.change.check,checkbook_id:0
 #: field:account.check,checkbook_id:0
 msgid "Checkbook"
-msgstr ""
+msgstr "Blocchetto-assegno"
 
 #. module: account_check
 #: view:account.checkbook:account_check.view_account_checkbook_form
@@ -176,7 +181,7 @@ msgstr ""
 #: view:account.journal:account_check.view_account_check_journal_form
 #: field:account.journal,checkbook_ids:0
 msgid "Checkbooks"
-msgstr ""
+msgstr "Blocchetto-assegni"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_calendar
@@ -188,157 +193,164 @@ msgstr ""
 #: view:account.voucher:account_check.view_vendor_receipt_check_form
 #: view:account.voucher:account_check.view_vendor_receipt_dialog_form
 msgid "Checks"
-msgstr ""
+msgstr "Assegni"
 
 #. module: account_check
 #: field:account.check,clearing:0
 msgid "Clearing"
-msgstr ""
+msgstr "Liquidazione"
 
 #. module: account_check
-#: field:account.check,company_id:0 field:account.check.action,company_id:0
+#: field:account.check,company_id:0
+#: field:account.check.action,company_id:0
 #: field:account.check.dreject,company_id:0
 #: field:account.checkbook,company_id:0
 msgid "Company"
-msgstr ""
+msgstr "Società"
 
 #. module: account_check
 #: field:account.check,company_currency_amount:0
 msgid "Company Currency Amount"
-msgstr ""
+msgstr "Importo Valuta Società"
 
 #. module: account_check
 #: help:account.checkbook,company_id:0
 msgid "Company related to this journal"
-msgstr ""
+msgstr "Società collegata a questo sezionale"
 
 #. module: account_check
 #: view:account.change.check:account_check.account_change_check_form_view
 msgid "Confirm"
-msgstr ""
+msgstr "Conferma"
 
 #. module: account_check
-#: field:account.change.check,create_uid:0 field:account.check,create_uid:0
+#: field:account.change.check,create_uid:0
+#: field:account.check,create_uid:0
 #: field:account.check.action,create_uid:0
 #: field:account.check.dreject,create_uid:0
 #: field:account.checkbook,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: account_check
-#: field:account.change.check,create_date:0 field:account.check,create_date:0
+#: field:account.change.check,create_date:0
+#: field:account.check,create_date:0
 #: field:account.check.action,create_date:0
 #: field:account.check.dreject,create_date:0
 #: field:account.checkbook,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: account_check
 #: selection:account.checkbook,issue_check_subtype:0
 msgid "Currents"
-msgstr ""
+msgstr "Correnti"
 
 #. module: account_check
 #: field:account.check,customer_reject_debit_note_id:0
 msgid "Customer Reject Debit Note"
-msgstr ""
+msgstr "Nota di Addebito Rifiuto Cliente"
 
 #. module: account_check
 #: field:account.check.action,date:0
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: account_check
 #: help:account.check,message_last_post:0
 #: help:account.checkbook,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr ""
+msgstr "Data dell'ultimo messaggio pubblicato sul record."
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Debit"
-msgstr ""
+msgstr "Addebito"
 
 #. module: account_check
 #: field:account.check,debit_account_move_id:0
 msgid "Debit Account Move"
-msgstr ""
+msgstr "Movimentazione Conto Addebito"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:135
 #, python-format
 msgid "Debit Check Nr. "
-msgstr ""
+msgstr "Addebito Assegno Nr. "
 
 #. module: account_check
 #: field:account.checkbook,debit_journal_id:0
 msgid "Debit Journal"
-msgstr ""
+msgstr "Addebito Sezionale"
 
 #. module: account_check
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Debited"
-msgstr ""
+msgstr "Addebitato"
 
 #. module: account_check
 #: selection:account.checkbook,issue_check_subtype:0
 msgid "Deferred"
-msgstr ""
+msgstr "Rinviato"
 
 #. module: account_check
 #: field:account.check,deposit_account_move_id:0
 msgid "Deposit Account Move"
-msgstr ""
+msgstr "Movimentazione Conto Deposito"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:127
 #, python-format
 msgid "Deposit Check Nr. "
-msgstr ""
+msgstr "Deposito Assegno Nr. "
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Deposited"
-msgstr ""
+msgstr "Depositato"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_tree
 #: view:account.check:account_check.view_checks_search
 #: field:account.check,destiny_partner_id:0
 msgid "Destiny Partner"
-msgstr ""
+msgstr "Partner di Destinazione"
 
 #. module: account_check
-#: selection:account.check,state:0 selection:account.checkbook,state:0
+#: view:account.check:account_check.view_checks_search
+#: selection:account.check,state:0
+#: selection:account.checkbook,state:0
 msgid "Draft"
 msgstr "Bozza"
 
 #. module: account_check
 #: field:account.check.dreject,expense_account:0
 msgid "Expense Account"
-msgstr ""
+msgstr "Conto Spese"
 
 #. module: account_check
 #: field:account.check,expense_account_move_id:0
 msgid "Expense Account Move"
-msgstr ""
+msgstr "Movimentazione Conto Spese"
 
 #. module: account_check
 #: field:account.check.dreject,expense_amount:0
 msgid "Expense Amount"
-msgstr ""
+msgstr "Importo Spesa"
 
 #. module: account_check
 #: field:account.check,message_follower_ids:0
 #: field:account.checkbook,message_follower_ids:0
 msgid "Followers"
-msgstr ""
+msgstr "Followers"
 
 #. module: account_check
 #: field:account.checkbook,range_from:0
 msgid "From Check Number"
-msgstr ""
+msgstr "Dal Numero di Assegno"
 
 #. module: account_check
 #: view:account.check:account_check.view_checks_search
@@ -346,152 +358,160 @@ msgid "Group By..."
 msgstr "Raggruppa per..."
 
 #. module: account_check
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Handed"
-msgstr ""
+msgstr "Consegnato"
 
 #. module: account_check
 #: field:account.check,third_handed_voucher_id:0
 msgid "Handed Voucher"
-msgstr ""
+msgstr "Voucher consegnato"
 
 #. module: account_check
 #: field:account.check.dreject,has_expense:0
 msgid "Has Expense"
-msgstr ""
+msgstr "Ha spese"
 
 #. module: account_check
 #: selection:account.check,state:0
 msgid "Holding"
-msgstr ""
+msgstr "In Mano"
 
 #. module: account_check
 #: help:account.check,message_summary:0
 #: help:account.checkbook,message_summary:0
-msgid ""
-"Holds the Chatter summary (number of messages, ...). This summary is "
-"directly in html format in order to be inserted in kanban views."
-msgstr ""
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Contiene il riepilogo della chat ( numero di messaggi, …). Questa sintesi è direttamente in formato HTML, al fine di essere inserita nella vista kanban."
 
 #. module: account_check
-#: field:account.change.check,id:0 field:account.check,id:0
-#: field:account.check.action,id:0 field:account.check.dreject,id:0
+#: field:account.change.check,id:0
+#: field:account.check,id:0
+#: field:account.check.action,id:0
+#: field:account.check.dreject,id:0
 #: field:account.checkbook,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_check
-#: help:account.check,message_unread:0 help:account.checkbook,message_unread:0
+#: help:account.check,message_unread:0
+#: help:account.checkbook,message_unread:0
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "Se selezionato i nuovi messaggi richiedono la vostra attenzione."
 
 #. module: account_check
 #: code:addons/account_check/models/account_voucher.py:45
 #, python-format
 msgid "Importe en Cheques"
-msgstr ""
+msgstr "Importo in Assegni"
 
 #. module: account_check
 #: view:account.checkbook:account_check.view_account_checkbook_form
 #: selection:account.checkbook,state:0
 msgid "In Use"
-msgstr ""
+msgstr "In Uso"
 
 #. module: account_check
 #: field:account.check.dreject,expense_to_customer:0
 msgid "Invoice Expenses to Customer"
-msgstr ""
+msgstr "Fattura le Spese al Cliente"
 
 #. module: account_check
 #: field:account.check,message_is_follower:0
 #: field:account.checkbook,message_is_follower:0
 msgid "Is a Follower"
-msgstr ""
+msgstr "E' un Follower"
 
 #. module: account_check
 #: code:addons/account_check/models/account.py:21
 #, python-format
 msgid "Issue Check"
-msgstr ""
+msgstr "Assegno Emesso"
 
 #. module: account_check
 #: field:account.checkbook,issue_check_subtype:0
 msgid "Issue Check Subtype"
-msgstr ""
+msgstr "Sottotipo di Assegno Emesso"
 
 #. module: account_check
 #: field:account.checkbook,issue_check_ids:0
 #: model:ir.actions.act_window,name:account_check.action_issue_check
 #: model:ir.ui.menu,name:account_check.menu_issue_check
 msgid "Issue Checks"
-msgstr ""
+msgstr "Assegni Emessi"
 
 #. module: account_check
 #: field:account.change.check,issue_date:0
 #: view:account.check:account_check.view_checks_search
 #: field:account.check,issue_date:0
 msgid "Issue Date"
-msgstr ""
+msgstr "Data di Emissione"
 
 #. module: account_check
 #: field:account.voucher,issued_check_ids:0
 msgid "Issued Checks"
-msgstr ""
+msgstr "Assegni Emessi"
 
 #. module: account_check
 #: help:account.checkbook,debit_journal_id:0
 msgid "It will be used to make the debit of the check on checks "
-msgstr ""
+msgstr "Sarà utilizzato per effettuare l'addebito dell'assegno sugli assegni"
 
 #. module: account_check
 #: view:account.check:account_check.view_checks_search
-#: field:account.check,journal_id:0 field:account.check.action,journal_id:0
+#: field:account.check,journal_id:0
+#: field:account.check.action,journal_id:0
 #: field:account.checkbook,journal_id:0
 #: model:ir.model,name:account_check.model_account_journal
 msgid "Journal"
-msgstr ""
+msgstr "Sezionale"
 
 #. module: account_check
 #: code:addons/account_check/models/account_checkbook.py:108
 #, python-format
 msgid "Journal And Debit Journal must belong to the same company"
-msgstr ""
+msgstr "Sezionale e Sezionale di Addebito devono appartenere alla stessa società"
 
 #. module: account_check
 #: help:account.checkbook,journal_id:0
 msgid "Journal where it is going to be used"
-msgstr ""
+msgstr "Sezionale dove sarà usato"
 
 #. module: account_check
 #: field:account.check,message_last_post:0
 #: field:account.checkbook,message_last_post:0
 msgid "Last Message Date"
-msgstr ""
+msgstr "Data Ultimo Messaggio"
 
 #. module: account_check
-#: field:account.change.check,write_uid:0 field:account.check,write_uid:0
+#: field:account.change.check,write_uid:0
+#: field:account.check,write_uid:0
 #: field:account.check.action,write_uid:0
-#: field:account.check.dreject,write_uid:0 field:account.checkbook,write_uid:0
+#: field:account.check.dreject,write_uid:0
+#: field:account.checkbook,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo Aggiornamento effettuato da"
 
 #. module: account_check
-#: field:account.change.check,write_date:0 field:account.check,write_date:0
+#: field:account.change.check,write_date:0
+#: field:account.check,write_date:0
 #: field:account.check.action,write_date:0
 #: field:account.check.dreject,write_date:0
 #: field:account.checkbook,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo Aggiornamento effettuato il"
 
 #. module: account_check
-#: field:account.check,message_ids:0 field:account.checkbook,message_ids:0
+#: field:account.check,message_ids:0
+#: field:account.checkbook,message_ids:0
 msgid "Messages"
-msgstr ""
+msgstr "Messaggi"
 
 #. module: account_check
-#: help:account.check,message_ids:0 help:account.checkbook,message_ids:0
+#: help:account.check,message_ids:0
+#: help:account.checkbook,message_ids:0
 msgid "Messages and communication history"
-msgstr ""
+msgstr "Messaggi e cronologia comunicazioni"
 
 #. module: account_check
 #: field:account.checkbook,name:0
@@ -502,20 +522,20 @@ msgstr "Nome"
 #: code:addons/account_check/models/account_checkbook.py:61
 #, python-format
 msgid "Next Check Number"
-msgstr ""
+msgstr "Successivo Numero Assegno"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_reject.py:122
 #, python-format
 msgid "No journal for rejection in company %s"
-msgstr ""
+msgstr "Nessun sezionale per il rifiuto nella società %s"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:121
 #: code:addons/account_check/wizard/check_reject.py:164
 #, python-format
 msgid "Not period found for this date"
-msgstr ""
+msgstr "Nessun periodo trovato per questa data"
 
 #. module: account_check
 #: field:account.change.check,number:0
@@ -526,126 +546,136 @@ msgstr ""
 #: code:addons/account_check/models/account_check.py:68
 #, python-format
 msgid "Number"
-msgstr ""
+msgstr "Numero"
 
 #. module: account_check
 #: field:account.checkbook,padding:0
 msgid "Number Padding"
-msgstr ""
+msgstr "Number Padding"
+
+#. module: account_check
+#: view:account.check:account_check.view_checks_search
+msgid "On Hold"
+msgstr "In Mano"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_reject.py:60
 #, python-format
 msgid "Only deposited or handed checks can be rejected."
-msgstr ""
+msgstr "Solo gli assegni depositati o consegnati possono essere rifiutati."
 
 #. module: account_check
-#: help:account.change.check,payment_date:0 help:account.check,payment_date:0
+#: help:account.change.check,payment_date:0
+#: help:account.check,payment_date:0
 msgid "Only if this check is post dated"
-msgstr ""
+msgstr "Solo se questo assegno è post datato"
 
 #. module: account_check
 #: field:account.change.check,original_check_id:0
 msgid "Original Check"
-msgstr ""
+msgstr "Assegno Originale"
 
 #. module: account_check
-#: field:account.change.check,owner_name:0 field:account.check,owner_name:0
+#: field:account.change.check,owner_name:0
+#: field:account.check,owner_name:0
 msgid "Owner Name"
-msgstr ""
+msgstr "Nome Proprietario"
 
 #. module: account_check
-#: field:account.change.check,vat:0 field:account.check,vat:0
+#: field:account.change.check,vat:0
+#: field:account.check,vat:0
 msgid "Owner Vat"
-msgstr ""
+msgstr "P. IVA Proprietario"
 
 #. module: account_check
 #: code:addons/account_check/models/account_checkbook.py:101
 #, python-format
 msgid "Padding must be lower than 32"
-msgstr ""
+msgstr "Padding must be lower than 32"
 
 #. module: account_check
 #: field:account.change.check,payment_date:0
 #: view:account.check:account_check.view_checks_search
 #: field:account.check,payment_date:0
 msgid "Payment Date"
-msgstr ""
+msgstr "Data Pagamento"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:309
 #, python-format
 msgid "Payment Date must be greater than Issue Date"
-msgstr ""
+msgstr "La Data di Pagamento deve essere successiva rispetto alla Data di Emissione"
 
 #. module: account_check
 #: view:account.voucher:account_check.view_vendor_payment_check_form
 #: view:account.voucher:account_check.view_vendor_receipt_check_form
 msgid "Payment Information"
-msgstr ""
+msgstr "Informazioni pagamento"
 
 #. module: account_check
 #: constraint:account.checkbook:0
 msgid "Range to must be greater than range from"
-msgstr ""
+msgstr "L'intervallo deve essere maggiore dell'intervallo da"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Reject"
-msgstr ""
+msgstr "Rifiuta"
 
 #. module: account_check
 #: field:account.check.dreject,reject_date:0
 msgid "Reject Date"
-msgstr ""
+msgstr "Data Rifiuto"
 
 #. module: account_check
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Rejected"
-msgstr ""
+msgstr "Rifiutato"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_reject.py:177
 #, python-format
 msgid "Rejected Check Nr. "
-msgstr ""
+msgstr "Assegno Rifiutato Nr. "
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_reject.py:82
 #, python-format
 msgid "Rejected Expenses, Check N: "
-msgstr ""
+msgstr "Spese Rifiutate, Assegno N: "
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Related Documents"
-msgstr ""
+msgstr "Documenti Correlati"
 
 #. module: account_check
 #: field:account.check,replacing_check_id:0
 msgid "Replacing Check"
-msgstr ""
+msgstr "Sostituzione Assegno"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_form
 msgid "Return"
-msgstr ""
+msgstr "Restituire"
 
 #. module: account_check
 #: field:account.check,return_account_move_id:0
 msgid "Return Account Move"
-msgstr ""
+msgstr "Movimentazione Conto Restituzione"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:143
 #, python-format
 msgid "Return Check Nr. "
-msgstr ""
+msgstr "Assegno Restituito Nr. "
 
 #. module: account_check
+#: view:account.check:account_check.view_checks_search
 #: selection:account.check,state:0
 msgid "Returned"
-msgstr ""
+msgstr "Restituito"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_create_tree
@@ -653,62 +683,61 @@ msgstr ""
 #: view:account.check:account_check.view_checks_search
 #: field:account.check,source_partner_id:0
 msgid "Source Partner"
-msgstr ""
+msgstr "Partner di Origine"
 
 #. module: account_check
 #: view:account.check:account_check.view_checks_search
-#: field:account.check,state:0 field:account.checkbook,state:0
+#: field:account.check,state:0
+#: field:account.checkbook,state:0
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 #. module: account_check
 #: field:account.check,issue_check_subtype:0
 msgid "Subtype"
-msgstr ""
+msgstr "Sottotipo"
 
 #. module: account_check
 #: field:account.check,message_summary:0
 #: field:account.checkbook,message_summary:0
 msgid "Summary"
-msgstr ""
+msgstr "Riepilogo"
 
 #. module: account_check
 #: field:account.check,supplier_reject_debit_note_id:0
 msgid "Supplier Reject Debit Note"
-msgstr ""
+msgstr "Nota di Addebito Rifiuto Fornitore"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:321
 #, python-format
 msgid "The Check must be in draft state for unlink !"
-msgstr ""
+msgstr "L'Assegno deve essere in stato di bozza per essere scollegato !"
 
 #. module: account_check
 #: help:account.check,issue_check_subtype:0
 #: help:account.checkbook,issue_check_subtype:0
-msgid ""
-"The only difference bewteen Deferred and Currents is that when delivering a "
-"Deferred check a Payment Date is Require"
-msgstr ""
+msgid "The only difference bewteen Deferred and Currents is that when delivering a Deferred check a Payment Date is Require"
+msgstr "L'unica differenza tra Differito e Correnti è che quando consegna un assegno Differito una data di pagamento è richiesta"
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:67
 #, python-format
 msgid "The selected checks must be in handed state."
-msgstr ""
+msgstr "Gli assegni selezionati devono essere in stato di “consegnato”."
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:60
 #: code:addons/account_check/wizard/check_action.py:74
 #, python-format
 msgid "The selected checks must be in holding state."
-msgstr ""
+msgstr "Gli assegni selezionati devono essere in stato di “in possesso”."
 
 #. module: account_check
 #: code:addons/account_check/models/account.py:22
 #, python-format
 msgid "Third Check"
-msgstr ""
+msgstr "Assegno Terzi"
 
 #. module: account_check
 #: field:account.voucher,delivered_third_check_ids:0
@@ -716,85 +745,81 @@ msgstr ""
 #: model:ir.actions.act_window,name:account_check.action_third_check
 #: model:ir.ui.menu,name:account_check.menu_third_check
 msgid "Third Checks"
-msgstr ""
+msgstr "Assegni Terzi"
 
 #. module: account_check
 #: help:account.check,company_currency_amount:0
-msgid ""
-"This value is only set for those checks that has a different currency than "
-"the company one."
-msgstr ""
+msgid "This value is only set for those checks that has a different currency than the company one."
+msgstr "Questo valore è impostato solo per quei assegni che hanno una valuta diversa da quella della società."
 
 #. module: account_check
 #: field:account.checkbook,range_to:0
 msgid "To Check Number"
-msgstr ""
+msgstr "All'assegno numero"
 
 #. module: account_check
 #: view:account.checkbook:account_check.view_account_checkbook_form
 msgid "To Draft"
-msgstr ""
+msgstr "A Bozza"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:395
 #, python-format
 msgid "To cancel a debit you must first delete Debit Account Move!"
-msgstr ""
+msgstr "Per cancellare un addebito deve essere prima eliminata la Movimentazione Conto Addebito!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:405
 #, python-format
 msgid "To cancel a deposit you must first delete the Deposit Account Move!"
-msgstr ""
+msgstr "Per cancellare un deposito deve essere prima eliminata la Movimentazione Conto Deposito!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:415
 #, python-format
 msgid "To cancel a deposit you must first delete the Return Account Move!"
-msgstr ""
+msgstr "Per cancellare un deposito deve essere prima eliminata la Movimentazione Conto Restituzione!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:385
 #, python-format
 msgid "To cancel a rejection you must first delete Expense Account Move!"
-msgstr ""
+msgstr "Per cancellare un rifiuto deve essere prima eliminata la Movimentazione Conto Spese!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:377
 #, python-format
-msgid ""
-"To cancel a rejection you must first delete the customer reject debit note!"
-msgstr ""
+msgid "To cancel a rejection you must first delete the customer reject debit note!"
+msgstr "Per cancellare un rifiuto deve essere prima eliminata la nota di addebito di rifiuto del cliente!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:381
 #, python-format
-msgid ""
-"To cancel a rejection you must first delete the supplier reject debit note!"
-msgstr ""
+msgid "To cancel a rejection you must first delete the supplier reject debit note!"
+msgstr "Per cancellare un rifiuto deve essere prima eliminata la nota di addebito di rifiuto del fornitore!"
 
 #. module: account_check
 #: view:account.check:account_check.view_account_check_create_tree
 #: view:account.check:account_check.view_account_check_tree
 msgid "Total Amount"
-msgstr ""
+msgstr "Importo Totale"
 
 #. module: account_check
 #: field:account.check,type:0
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: account_check
 #: field:account.check,message_unread:0
 #: field:account.checkbook,message_unread:0
 msgid "Unread Messages"
-msgstr ""
+msgstr "Messaggi non letti"
 
 #. module: account_check
 #: view:account.checkbook:account_check.view_account_checkbook_form
 #: selection:account.checkbook,state:0
 msgid "Used"
-msgstr ""
+msgstr "Usato"
 
 #. module: account_check
 #: field:account.check,user_id:0
@@ -804,89 +829,82 @@ msgstr "Utente"
 #. module: account_check
 #: field:account.check,voucher_id:0
 msgid "Voucher"
-msgstr ""
+msgstr "Voucher"
 
 #. module: account_check
 #: field:account.check,website_message_ids:0
 #: field:account.checkbook,website_message_ids:0
 msgid "Website Messages"
-msgstr ""
+msgstr "Website Messages"
 
 #. module: account_check
 #: help:account.check,website_message_ids:0
 #: help:account.checkbook,website_message_ids:0
 msgid "Website communication history"
-msgstr ""
+msgstr "Website communication history"
 
 #. module: account_check
 #: code:addons/account_check/models/account_checkbook.py:114
 #, python-format
 msgid "You can drop the checkbook(s) only in draft state !"
-msgstr ""
+msgstr "Il blocchetto-assegni può essere lasciato solo in stato di bozza!"
 
 #. module: account_check
 #: code:addons/account_check/models/account_voucher.py:79
 #, python-format
-msgid ""
-"You can not cancel handed third checks in states other than \"handed\". "
-"First try to change check state."
-msgstr ""
+msgid "You can not cancel handed third checks in states other than \"handed\". First try to change check state."
+msgstr "Non è possibile annullare assegni terzi consegnati in stato diverso da “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:437
 #, python-format
-msgid ""
-"You can not cancel issue checks in states other than \"draft or \"handed\". "
-"First try to change check state."
-msgstr ""
+msgid "You can not cancel issue checks in states other than \"draft or \"handed\". First try to change check state."
+msgstr "Non è possibile annullare assegni emessi in uno stato diverso da “bozza” o “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:443
 #, python-format
-msgid ""
-"You can not cancel third checks in states other than \"draft or \"holding\"."
-" First try to change check state."
-msgstr ""
+msgid "You can not cancel third checks in states other than \"draft or \"holding\". First try to change check state."
+msgstr "Non è possibile annullare assegni terzi in uno stato diverso da “bozza” o “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
 #: code:addons/account_check/models/account_check.py:447
 #, python-format
 msgid "You can not cancel third checks that are being used on payments"
-msgstr ""
+msgstr "Non è possibile annullare assegni terzi che sono stati usati su dei pagamenti."
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:69
 #, python-format
 msgid "You can not debit a Third Check."
-msgstr ""
+msgstr "Non è possibile addebitare un Assegno Terzi."
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:62
 #, python-format
 msgid "You can not deposit a Issue Check."
-msgstr ""
+msgstr "Non è possibile depositare un Assegno Emesso."
 
 #. module: account_check
 #: code:addons/account_check/wizard/check_action.py:77
 #, python-format
 msgid "You can not return a Issue Check."
-msgstr ""
+msgstr "Non è possibile restituire un Assegno Emesso."
 
 #. module: account_check
 #: help:account.checkbook,padding:0
-msgid ""
-"automatically adds some '0' on the left of the 'Number' to get the required "
-"padding size."
-msgstr ""
+msgid "automatically adds some '0' on the left of the 'Number' to get the required padding size."
+msgstr "automatically adds some '0' on the left of the 'Number' to get the required padding size."
 
 #. module: account_check
 #: view:account.change.check:account_check.account_change_check_form_view
 msgid "or"
-msgstr "o"
+msgstr "or"
 
 #. module: account_check
 #: view:account.voucher:account_check.view_vendor_payment_check_form
 #: view:account.voucher:account_check.view_vendor_receipt_check_form
 #: view:account.voucher:account_check.view_vendor_receipt_dialog_form
 msgid "{'invisible':[('payment_subtype','!=', False)]}"
-msgstr ""
+msgstr "{'invisible':[('payment_subtype','!=', False)]}"
+

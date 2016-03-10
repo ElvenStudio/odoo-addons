@@ -127,6 +127,18 @@
                     <field name="state"/>
                     <field name="owner_name"/>
                     <field name="vat"/>
+
+                    <filter string="Draft" domain="[('state','=','draft')]" name="check_draft" />
+                    <filter string="On Hold" domain="[('state','=','holding')]" name="check_holding" />
+                    <filter string="Changed" domain="[('state','=','changed')]" name="check_changed" />
+                    <filter string="Handed" domain="[('state','=','handed')]" name="check_handed" />
+                    <filter string="Deposited" domain="[('state','=','deposited')]" name="check_deposited" />
+                    <filter string="Debited" domain="[('state','=','debited')]" name="check_debited" />
+                    <filter string="Rejected" domain="[('state','=','rejected')]" name="check_rejected" />
+                    <filter string="Returned" domain="[('state','=','returned')]" name="check_returned" />
+                    <filter string="Cancelled" domain="[('state','=','cancel')]" name="check_cancel" />
+                    <separator />
+
                     <group expand="0" string="Group By...">
                         <filter string="Issue Date" context="{'group_by':'issue_date'}"/>
                         <filter string="Payment Date" context="{'group_by':'payment_date'}"/>                        
@@ -161,7 +173,7 @@
             <field name="search_view_id" ref=""/>
             <field name="view_id" ref="view_account_check_tree"/>
             <field name="domain">[('type','=','third_check')]</field>
-            <field name="context">{'search_default_state':'holding','default_type':'third_check'}</field>
+            <field name="context">{'search_default_check_holding':1,'default_type':'third_check'}</field>
         </record>
         
         <menuitem
@@ -179,7 +191,7 @@
             <field name="search_view_id" ref=""/>
             <field name="view_id" ref="view_account_check_tree"/>
             <field name="domain">[('type','=','issue_check')]</field>
-            <field name="context">{'search_default_state':'handed','default_type':'issue_check'}</field>
+            <field name="context">{'search_default_check_handed':1,'default_type':'issue_check'}</field>
         </record>
         
         <menuitem
