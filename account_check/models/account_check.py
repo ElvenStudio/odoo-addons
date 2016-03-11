@@ -277,6 +277,8 @@ class account_check(models.Model):
         return True
 
     def _check_number_third(self, cr, uid, ids, context=None):
+        return True
+        """
         for obj in self.browse(cr, uid, ids, context=context):
             if obj.type == 'third_check':
                 same_number_check_ids = self.search(
@@ -288,16 +290,16 @@ class account_check(models.Model):
                 if same_number_check_ids:
                     return False
         return True
+        """
 
     _constraints = [
         (_check_number_issue,
             'Check Number must be unique per Checkbook!',
             ['number', 'checkbook_id', 'type']),
-        """
+
         (_check_number_third,
             'Check Number must be unique per Owner and Bank!',
             ['number', 'bank_id', 'owner_name', 'type']),
-        """
     ]
 
     @api.one
