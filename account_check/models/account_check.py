@@ -254,6 +254,16 @@ class account_check(models.Model):
         copy=False
         )
 
+    deposit_account_journal_id = fields.Many2one(
+        'account.journal',
+        'Deposit Account Journal',
+        related='deposit_account_move_id.journal_id',
+        readonly=True,
+        store=True,
+        index=True,
+        copy=False
+    )
+
     def _check_number_interval(self, cr, uid, ids, context=None):
         for obj in self.browse(cr, uid, ids, context=context):
             if obj.type != 'issue_check' or (

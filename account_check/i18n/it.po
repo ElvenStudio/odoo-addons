@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-10 19:06+0000\n"
-"PO-Revision-Date: 2016-03-10 19:06+0000\n"
+"POT-Creation-Date: 2016-03-15 15:45+0000\n"
+"PO-Revision-Date: 2016-03-15 15:45+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -293,6 +293,11 @@ msgstr "Addebitato"
 #: selection:account.checkbook,issue_check_subtype:0
 msgid "Deferred"
 msgstr "Rinviato"
+
+#. module: account_check
+#: field:account.check,deposit_account_journal_id:0
+msgid "Deposit Account Journal"
+msgstr "Sezionale di Deposito"
 
 #. module: account_check
 #: field:account.check,deposit_account_move_id:0
@@ -601,7 +606,7 @@ msgid "Payment Date"
 msgstr "Data Pagamento"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:309
+#: code:addons/account_check/models/account_check.py:323
 #, python-format
 msgid "Payment Date must be greater than Issue Date"
 msgstr "La Data di Pagamento deve essere successiva rispetto alla Data di Emissione"
@@ -709,7 +714,7 @@ msgid "Supplier Reject Debit Note"
 msgstr "Nota di Addebito Rifiuto Fornitore"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:321
+#: code:addons/account_check/models/account_check.py:335
 #, python-format
 msgid "The Check must be in draft state for unlink !"
 msgstr "L'Assegno deve essere in stato di bozza per essere scollegato !"
@@ -763,37 +768,37 @@ msgid "To Draft"
 msgstr "A Bozza"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:395
+#: code:addons/account_check/models/account_check.py:409
 #, python-format
 msgid "To cancel a debit you must first delete Debit Account Move!"
 msgstr "Per cancellare un addebito deve essere prima eliminata la Movimentazione Conto Addebito!"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:405
+#: code:addons/account_check/models/account_check.py:419
 #, python-format
 msgid "To cancel a deposit you must first delete the Deposit Account Move!"
 msgstr "Per cancellare un deposito deve essere prima eliminata la Movimentazione Conto Deposito!"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:415
+#: code:addons/account_check/models/account_check.py:429
 #, python-format
 msgid "To cancel a deposit you must first delete the Return Account Move!"
 msgstr "Per cancellare un deposito deve essere prima eliminata la Movimentazione Conto Restituzione!"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:385
+#: code:addons/account_check/models/account_check.py:399
 #, python-format
 msgid "To cancel a rejection you must first delete Expense Account Move!"
 msgstr "Per cancellare un rifiuto deve essere prima eliminata la Movimentazione Conto Spese!"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:377
+#: code:addons/account_check/models/account_check.py:391
 #, python-format
 msgid "To cancel a rejection you must first delete the customer reject debit note!"
 msgstr "Per cancellare un rifiuto deve essere prima eliminata la nota di addebito di rifiuto del cliente!"
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:381
+#: code:addons/account_check/models/account_check.py:395
 #, python-format
 msgid "To cancel a rejection you must first delete the supplier reject debit note!"
 msgstr "Per cancellare un rifiuto deve essere prima eliminata la nota di addebito di rifiuto del fornitore!"
@@ -856,19 +861,19 @@ msgid "You can not cancel handed third checks in states other than \"handed\". F
 msgstr "Non è possibile annullare assegni terzi consegnati in stato diverso da “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:437
+#: code:addons/account_check/models/account_check.py:451
 #, python-format
 msgid "You can not cancel issue checks in states other than \"draft or \"handed\". First try to change check state."
 msgstr "Non è possibile annullare assegni emessi in uno stato diverso da “bozza” o “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:443
+#: code:addons/account_check/models/account_check.py:457
 #, python-format
 msgid "You can not cancel third checks in states other than \"draft or \"holding\". First try to change check state."
 msgstr "Non è possibile annullare assegni terzi in uno stato diverso da “bozza” o “consegnato”. Provare prima a cambiare lo stato dell'assegno."
 
 #. module: account_check
-#: code:addons/account_check/models/account_check.py:447
+#: code:addons/account_check/models/account_check.py:461
 #, python-format
 msgid "You can not cancel third checks that are being used on payments"
 msgstr "Non è possibile annullare assegni terzi che sono stati usati su dei pagamenti."

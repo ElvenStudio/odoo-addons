@@ -17,6 +17,7 @@
                     <field name="source_partner_id" invisible="context.get('default_type',False) != 'third_check'" string="Source Partner"/>
                     <field name="destiny_partner_id" string="Destiny Partner"/>
                     <field name="bank_id" invisible="context.get('default_type',False) != 'third_check'"/>
+                    <field name="deposit_account_journal_id" invisible="context.get('default_type',False) != 'third_check'"/>
                     <field name="amount" sum="Total Amount"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                     <field name="state"/>
@@ -98,6 +99,7 @@
                             <field name="replacing_check_id" attrs="{'invisible':[('replacing_check_id','=',False)]}"/>
                             <field name="debit_account_move_id" attrs="{'invisible':[('debit_account_move_id','=',False)]}"/>
                             <field name="deposit_account_move_id" attrs="{'invisible':[('deposit_account_move_id','=',False)]}"/>
+                            <field name="deposit_account_journal_id" attrs="{'invisible':[('deposit_account_journal_id','=',False)]}"/>
                             <field name="customer_reject_debit_note_id" attrs="{'invisible':[('customer_reject_debit_note_id','=',False)]}"/>
                             <field name="expense_account_move_id" attrs="{'invisible':[('expense_account_move_id','=',False)]}"/>
                             <field name="supplier_reject_debit_note_id" attrs="{'invisible':[('supplier_reject_debit_note_id','=',False)]}"/>
