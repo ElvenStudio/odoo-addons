@@ -15,6 +15,11 @@ class account_journal(models.Model):
         'Checkbooks',
         )
 
+    allow_voucher_recomputation = fields.Boolean(
+        help="Allow credit/debit line recomputation when a payment is created.",
+        default=True
+    )
+
     @api.model
     def _get_payment_subtype(self):
         selection = super(account_journal, self)._get_payment_subtype()

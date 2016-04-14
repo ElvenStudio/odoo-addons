@@ -179,3 +179,16 @@ class account_voucher(models.Model):
                     )
             checks_total += move_line.debit - move_line.credit
         return checks_total
+
+    def recompute_voucher_lines(
+            self, cr, uid, ids, partner_id, journal_id, price, currency_id, ttype, date, context=None):
+
+        res = {'value': {'line_dr_ids': [], 'line_cr_ids': [], 'pre_line': False}}
+
+        if self.pool.get('account.journal').browse(cr, uid, journal_id).allow_voucher_recomputation:
+            res = super(account_voucher, self).recompute_voucher_lines(
+                cr, uid, ids, partner_id, journal_id, price, currency_id, ttype, date, context=context)
+        return res
+
+
+

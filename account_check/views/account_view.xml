@@ -7,6 +7,10 @@
             <field name="inherit_id" ref="account.view_account_journal_form"/>
             <field name="arch" type="xml">
                 <data>
+                    <xpath expr="//field[@name='centralisation']" position="after">
+                        <field name="allow_voucher_recomputation" />
+                    </xpath>
+
                     <xpath expr="//form/notebook" position="inside">
                         <page string="Checkbooks" attrs="{'invisible':[('payment_subtype','not in', ('issue_check'))]}">
                         	<field name="checkbook_ids" attrs="{'required':[('payment_subtype', '=', 'issue_check')]}" context="{'default_company_id':company_id}"/>
